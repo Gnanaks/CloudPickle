@@ -74,4 +74,5 @@ const getAll=async(req,res)=>{
     }
 };
 
+
 module.exports={registerStudent,loginStudent,getAll};

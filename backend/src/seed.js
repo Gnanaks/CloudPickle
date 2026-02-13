@@ -23,5 +23,6 @@ const seedAdmin=async()=>{
         console.error("Error creating admin user:",error.message);  
     }
 };
+
 module.exports=seedAdmin;
 

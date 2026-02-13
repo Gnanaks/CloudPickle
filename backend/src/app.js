@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const studentRoutes = require('./routes/studentRoutes');
+const adminRoutes = require('./routes/adminRoutes');
 const User = require('./models/user');
 
 
@@ -14,6 +15,8 @@ app.get("/hello", (req, res) => {
     res.send("Welcome to the Student Management API");
 });
 app.use("/api/students", studentRoutes);
+app.use("/api/admin", adminRoutes);
+
 
 
 
